@@ -1,6 +1,6 @@
 <?php
-require_once('c:/xampp/htdocs/libraries/fpdf/fpdf.php');
-require_once('c:/xampp/htdocs/libraries/fpdi/src/autoload.php');
+require_once('/libraries/fpdf/fpdf.php');
+require_once('/libraries/fpdi/src/autoload.php');
 
 // Database related code 
 $servername = "localhost";
