@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get your Certificate</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<style>
+    .box{
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    }
+</style>
+<body>
+    <div class="container">
+        <h3 align="center">Get your Certificate</h3>
+        <div class="box">
+        <form method="POST" action="mergepdf.php">
+            <div class="form-group">
+                <label for="id">Enter your BIB Id :</label>
+                <input type="text" class="form-control" id="bibid" name="bibid" class="form-control" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="year">Year :</label>
+                <select class="form-control" id="year" name="year">
+                    <option>2024</option>
+                </select>
+            </div>
+            <center>
+            <button type="submit" class="btn btn-primary">Get Certificate</button>
+            </center>
+        </form>
+    </div>
+    </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
