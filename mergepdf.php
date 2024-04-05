@@ -45,6 +45,7 @@ if (mysqli_num_rows($result) > 0) {
   //header("Location: ".$pdf);
   // Output the PDF file to the browser
   //echo $pdf;
+  
   // initiate FPDI
 $pdf = new \setasign\Fpdi\Fpdi();
 // add a page
@@ -82,8 +83,6 @@ $pdf->Output('I', "$name.pdf");
 
 // Close the database connection
 mysqli_close($conn);?>
-
-
 
 
 // End of database things.
